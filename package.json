@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "encrypt-rsa": "^2.1.2",
+    "jsencrypt": "^3.2.1",
+    "keypair": "^1.0.4",
+    "node-forge": "^1.3.1",
+    "quick-encrypt": "^1.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18"
+  }
+}
