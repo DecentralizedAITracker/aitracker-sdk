@@ -16,4 +16,4 @@ The ml dapp should recieve a rsa public key from the user. The ml dapp result ne
 ### The oracle dapp
 The oracle recieves the dapp result encrypted and can decrypt it with its private key. The oracle should run in tee mode.
 ### The user
-The front end should create rsa keys and send the public key to the ml dapp.
+The front end should create rsa keys and send the public key to the ml dapp. The result from the dapp will be encrypted with the user keys.
