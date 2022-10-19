@@ -1,5 +1,5 @@
 __pycache__
-public_key_ml.pem
+public_key_ml.pub
 private_key_ml.pem
-public_key_oracle.pem
+public_key_oracle.pub
 private_key_oracle.pem
