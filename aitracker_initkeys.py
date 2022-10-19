@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
     # Export public key in PKCS#1 format, PEM encoded 
     publicKeyMLPkcs1PEM = publicKeyML.save_pkcs1()
-    f_ml_pub = open('keys/public_key_ml.pem', 'wb')
+    f_ml_pub = open('keys/public_key_ml.pub', 'wb')
     f_ml_pub.write(publicKeyMLPkcs1PEM)
     f_ml_pub.close()
     # Export private key in PKCS#1 format, PEM encoded 
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     publicKeyOracle, privateKeyOracle = rsa.newkeys(2048)
     # Export public key in PKCS#1 format, PEM encoded
     publicKeyOraclePkcs1PEM = publicKeyOracle.save_pkcs1()
-    f_oracle_pub = open('keys/public_key_oracle.pem', 'wb')
+    f_oracle_pub = open('keys/public_key_oracle.pub', 'wb')
     f_oracle_pub.write(publicKeyOraclePkcs1PEM)
     f_oracle_pub.close()
     # Export private key in PKCS#1 format, PEM encoded 

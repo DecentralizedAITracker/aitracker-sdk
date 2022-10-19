@@ -4,14 +4,14 @@ import json
 
 if __name__ == '__main__':
     print("online")
-    ait_ml = AITrackerML('keys/public_key_oracle.pem','keys/private_key_ml.pem','keys/public_key_web.pem')
-    ait_oracle = AITrackerOracle('keys/public_key_ml.pem','keys/private_key_oracle.pem')
+    ait_ml = AITrackerML('keys/public_key_oracle.pub','keys/private_key_ml.pem','keys/public_key_web.pub')
+    ait_oracle = AITrackerOracle('keys/public_key_ml.pub','keys/private_key_oracle.pem')
 
-    #encryption test
+    #encryption for oracle
     message = 'does it work'
     message_encrypted = ait_ml.encrypt(message)
 
-    #encrypt web
+    #encrypt for web
     message_encrypted_web = ait_ml.encrypt_for_user(message)
     print(type(message_encrypted))
     f_web = open('encrypted_for_web_test.txt', 'w')
