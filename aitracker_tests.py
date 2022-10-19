@@ -12,10 +12,10 @@ if __name__ == '__main__':
     message_encrypted = ait_ml.encrypt(message)
 
     #encrypt web
-    message_encrypted = ait_ml.encrypt_for_user(message)
+    message_encrypted_web = ait_ml.encrypt_for_user(message)
     print(type(message_encrypted))
-    f_web = open('encrypted.txt', 'w')
-    f_web.write(message_encrypted)
+    f_web = open('encrypted_for_web_test.txt', 'w')
+    f_web.write(message_encrypted_web)
     f_web.close()
 
     #encode to json and decode test
